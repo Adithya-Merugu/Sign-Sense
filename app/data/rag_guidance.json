@@ -1,0 +1,50 @@
+[
+  {
+    "id": "general_no_hallucination",
+    "title": "Grounded document review rule",
+    "domains": ["all"],
+    "content": "Only flag a risk when it is supported by the uploaded document text or by a trusted general signing principle. If a clause, amount, date, penalty, or promise is not visible in the provided pages, say there is not enough evidence and ask the user to upload the missing page or clarify."
+  },
+  {
+    "id": "rental_deposit",
+    "title": "Rental and PG deposit review",
+    "domains": ["rental_pg", "hostel_rules"],
+    "content": "For rental, PG, and hostel documents, inspect security deposit refund conditions, lock-in period, notice period, rent increase terms, maintenance charges, visitor rules, eviction language, painting or cleaning deductions, and clauses allowing unilateral rule changes."
+  },
+  {
+    "id": "job_offer_bonds",
+    "title": "Job offer and internship review",
+    "domains": ["job_offer"],
+    "content": "For job offers and internships, inspect service bonds, training cost recovery, probation terms, salary during training, CTC breakup, non-compete or non-solicit restrictions, relocation obligations, termination notice, and vague performance or policy-change language."
+  },
+  {
+    "id": "loan_total_cost",
+    "title": "Loan, EMI, and BNPL total cost review",
+    "domains": ["loan_emi_bnpl"],
+    "content": "For loans, EMI, and BNPL documents, inspect processing fees, annual percentage rate or effective interest, late payment charges, foreclosure charges, auto-debit mandates, total repayment amount, penalty interest, and consequences of missed payments."
+  },
+  {
+    "id": "course_refunds",
+    "title": "Course and coaching enrollment review",
+    "domains": ["course_enrollment"],
+    "content": "For courses and coaching enrollments, inspect refund windows, placement guarantee wording, accreditation claims, cancellation terms, access expiry, hidden platform fees, and whether verbal promises are included in the written agreement."
+  },
+  {
+    "id": "subscriptions_auto_renew",
+    "title": "Gym and subscription review",
+    "domains": ["gym_subscription"],
+    "content": "For gyms and subscriptions, inspect auto-renewal, cancellation notice, freezing or pause conditions, no-refund clauses, joining fees, maintenance fees, and price-change language."
+  },
+  {
+    "id": "hospital_consent",
+    "title": "Hospital consent review",
+    "domains": ["hospital_consent"],
+    "content": "For hospital consent forms, explain the procedure consent, risks, alternatives, data sharing, extra charges, anesthesia consent, and emergency escalation language. Do not give medical advice; suggest questions the patient should ask the clinician."
+  },
+  {
+    "id": "privacy_data",
+    "title": "Privacy and data consent review",
+    "domains": ["privacy_policy", "hospital_consent", "course_enrollment", "job_offer", "all"],
+    "content": "For privacy terms, inspect what data is collected, whether data is shared with third parties, retention period, consent withdrawal, marketing consent, location or biometric data, and clauses that bundle optional consent with required service access."
+  }
+]
